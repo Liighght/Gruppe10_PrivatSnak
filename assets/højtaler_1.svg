@@ -1,1 +1,22 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 500"><defs><style>.cls-1{fill:#1a2b2d;}.cls-2{fill:#6d7070;stroke:#b5b5b5;}.cls-2,.cls-3{stroke-miterlimit:10;stroke-width:5px;}.cls-3{fill:#000707;stroke:#7e7f7f;}.cls-4{fill:#7092f2;}.cls-5{fill:#e5da77;}.cls-6{fill:#53bc88;}</style></defs><title>Artboard 1</title><rect class="cls-1" x="103" y="144" width="144" height="192"/><circle class="cls-2" cx="130.75" cy="172.25" r="12.75"/><circle class="cls-2" cx="216.75" cy="172.25" r="12.75"/><circle class="cls-2" cx="173.5" cy="202.5" r="20"/><circle class="cls-3" cx="173.75" cy="202.25" r="10.75"/><rect class="cls-4" x="234" y="330" width="10" height="4"/><rect class="cls-5" x="234" y="324" width="10" height="4"/><rect class="cls-6" x="234" y="318" width="10" height="4"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 144 192" style="enable-background:new 0 0 144 192;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1A2B2D;}
+	.st1{fill:#6D7070;stroke:#B5B5B5;stroke-width:5;stroke-miterlimit:10;}
+	.st2{fill:#000707;stroke:#7E7F7F;stroke-width:5;stroke-miterlimit:10;}
+	.st3{fill:#7092F2;}
+	.st4{fill:#E5DA77;}
+	.st5{fill:#53BC88;}
+</style>
+<title>Artboard 1</title>
+<rect class="st0" width="144" height="192"/>
+<circle class="st1" cx="27.8" cy="28.3" r="12.8"/>
+<circle class="st1" cx="113.8" cy="28.3" r="12.8"/>
+<circle class="st1" cx="70.5" cy="58.5" r="20"/>
+<circle class="st2" cx="70.8" cy="58.3" r="10.8"/>
+<rect x="131" y="186" class="st3" width="10" height="4"/>
+<rect x="131" y="180" class="st4" width="10" height="4"/>
+<rect x="131" y="174" class="st5" width="10" height="4"/>
+</svg>
