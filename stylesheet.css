@@ -1,226 +1,226 @@
 #baggrund {
-    background-image: url(assets/fest_lokale.svg);
-    width: 100vw;
-    height: 56.25vw;
-    z-index: 1;
-    position: absolute;
+	background-image: url(assets/fest_lokale.svg);
+	width: 100vw;
+	height: 56.25vw;
+	z-index: 1;
+	position: absolute;
 }
 
 #bord {
-    background-image: url(assets/bord.svg);
-    width: 29vw;
-    height: 14.6vw;
-    left: 20vw;
-    top: 41vw;
-    z-index: 3;
-    position: absolute;
-    transform: scale(1.1);
+	background-image: url(assets/bord.svg);
+	width: 29vw;
+	height: 14.6vw;
+	left: 20vw;
+	top: 41vw;
+	z-index: 3;
+	position: absolute;
+	transform: scale(1.1);
 }
 
 #hoejtaler1 {
-    position: absolute;
-    z-index: 2;
-    background-image: url(assets/h%C3%B8jtaler_1.svg);
-    height: 9.5vw;
-    width: 7vw;
-    top: 26.5vw;
-    right: 15vw;
+	position: absolute;
+	z-index: 2;
+	background-image: url(assets/h%C3%B8jtaler_1.svg);
+	height: 9.5vw;
+	width: 7vw;
+	top: 26.5vw;
+	right: 15vw;
 }
 
 #hoejtaler2 {
-    position: absolute;
-    z-index: 2;
-    background-image: url(assets/h%C3%B8jtaler_2.svg);
-    height: 9.5vw;
-    width: 7vw;
-    top: 26.5vw;
-    right: 35vw;
+	position: absolute;
+	z-index: 2;
+	background-image: url(assets/h%C3%B8jtaler_2.svg);
+	height: 9.5vw;
+	width: 7vw;
+	top: 26.5vw;
+	right: 35vw;
 }
 
 
 
 #sofa {
-    position: absolute;
-    z-index: 2;
-    background-image: url(assets/sofa.svg);
-    height: 19.9vw;
-    width: 17vw;
-    top: 32vw;
-    left: 5vw;
-    transform: scale(1.4);
+	position: absolute;
+	z-index: 2;
+	background-image: url(assets/sofa.svg);
+	height: 19.9vw;
+	width: 17vw;
+	top: 32vw;
+	left: 5vw;
+	transform: scale(1.4);
 }
 
 #woofer1 {
-    position: absolute;
-    z-index: 3;
-    background-image: url(assets/h%C3%B8jtaler_tilbeh%C3%B8r.svg);
-    width: 10vw;
-    height: 10vw;
-    transform: scale(0.4);
-    top: 28vw;
-    right: 13.5vw;
+	position: absolute;
+	z-index: 3;
+	background-image: url(assets/h%C3%B8jtaler_tilbeh%C3%B8r.svg);
+	width: 10vw;
+	height: 10vw;
+	transform: scale(0.4);
+	top: 28vw;
+	right: 13.5vw;
 }
 
 #woofer2 {
-    position: absolute;
-    z-index: 3;
-    background-image: url(assets/h%C3%B8jtaler_tilbeh%C3%B8r.svg);
-    width: 10vw;
-    height: 10vw;
-    transform: scale(0.4);
-    top: 28vw;
-    right: 33.4vw;
+	position: absolute;
+	z-index: 3;
+	background-image: url(assets/h%C3%B8jtaler_tilbeh%C3%B8r.svg);
+	width: 10vw;
+	height: 10vw;
+	transform: scale(0.4);
+	top: 28vw;
+	right: 33.4vw;
 }
 
 #disco {
-    position: absolute;
-    z-index: 2;
-    background-image: url(assets/diskokugle.svg);
-    height: 19.4vw;
-    width: 14vw;
-    transform: scale(0.6);
-    left: 40vw;
-    top: -3vw;
+	position: absolute;
+	z-index: 2;
+	background-image: url(assets/diskokugle.svg);
+	height: 19.4vw;
+	width: 14vw;
+	transform: scale(0.6);
+	left: 40vw;
+	top: -3vw;
 
 
 }
 
 .techno {
-    animation: techno_kf infinite 0.3s;
+	animation: techno_kf infinite 0.3s;
 }
 
 @keyframes techno_kf {
-    0% {
-        transform: scale(0.4);
-    }
-    50% {
-        transform: scale(0.5)
-    }
+	0% {
+		transform: scale(0.4);
+	}
+	50% {
+		transform: scale(0.5)
+	}
 }
 
 #kop1 {
-    position: absolute;
-    z-index: 4;
-    background-image: url(assets/krus.svg);
-    height: 10vw;
-    width: 8.5vw;
-    transform: scale(0.3);
-    top: 37vw;
-    left: 23vw
+	position: absolute;
+	z-index: 4;
+	background-image: url(assets/krus.svg);
+	height: 10vw;
+	width: 8.5vw;
+	transform: scale(0.3);
+	top: 37vw;
+	left: 23vw
 }
 
 #kop2 {
-    position: absolute;
-    z-index: 4;
-    background-image: url(assets/krus.svg);
-    height: 10vw;
-    width: 8.5vw;
-    transform: scale(0.3);
-    top: 36vw;
-    left: 25vw
+	position: absolute;
+	z-index: 4;
+	background-image: url(assets/krus.svg);
+	height: 10vw;
+	width: 8.5vw;
+	transform: scale(0.3);
+	top: 36vw;
+	left: 25vw
 }
 
 #kop3 {
-    position: absolute;
-    z-index: 4;
-    background-image: url(assets/krus.svg);
-    height: 10vw;
-    width: 8.5vw;
-    transform: scale(0.3);
-    top: 37vw;
-    left: 30vw
+	position: absolute;
+	z-index: 4;
+	background-image: url(assets/krus.svg);
+	height: 10vw;
+	width: 8.5vw;
+	transform: scale(0.3);
+	top: 37vw;
+	left: 30vw
 }
 
 #kop4 {
-    position: absolute;
-    z-index: 4;
-    background-image: url(assets/krus.svg);
-    height: 9.9vw;
-    width: 8.5vw;
-    transform: scale(0.3) rotate(90deg);
-    top: 37vw;
-    left: 36vw;
+	position: absolute;
+	z-index: 4;
+	background-image: url(assets/krus.svg);
+	height: 9.9vw;
+	width: 8.5vw;
+	transform: scale(0.3) rotate(90deg);
+	top: 37vw;
+	left: 36vw;
 }
 
 #floss_container {
-    position: absolute;
-    z-index: 20;
-    transform: scale(0.3);
-    left: 46vw;
-    top: -3vw
+	position: absolute;
+	z-index: 20;
+	transform: scale(0.3);
+	left: 46vw;
+	top: -3vw
 }
 
 #floss_sprite {
 
-    width: 50vw;
-    height: 66vw;
-    background-image: url(assets/floss-spritesheet.svg);
-    background-size: 1200%;
+	width: 50vw;
+	height: 66vw;
+	background-image: url(assets/floss-spritesheet.svg);
+	background-size: 1200%;
 
 }
 
 .floss_dance {
-    animation-name: floss_kf;
-    animation-duration: 2.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
+	animation-name: floss_kf;
+	animation-duration: 2.5s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
 }
 
 @keyframes floss_kf {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: -1200% 0%;
-    }
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: -1200% 0%;
+	}
 }
 
 #martin_container {
-    position: absolute;
-    z-index: 4;
-    left: 45vw;
-    top: 25vw
+	position: absolute;
+	z-index: 4;
+	left: 45vw;
+	top: 25vw
 }
 
 #martin_sprite {
-    width: 20vw;
-    height: 28.3vw;
-    background-image: url(assets/Martin_spritesheet.svg);
-    background-size: 600%
+	width: 20vw;
+	height: 28.3vw;
+	background-image: url(assets/Martin_spritesheet.svg);
+	background-size: 600%
 }
 
 #beerpong_container {
-    position: absolute;
-    z-index: 4;
-    left: 82vw;
-    top: 20vw;
-    transform: scale(0.8);
+	position: absolute;
+	z-index: 4;
+	left: 82vw;
+	top: 20vw;
+	transform: scale(0.8);
 }
 
 #beerpong_sprite {
 
-    width: 21vw;
-    height: 30vw;
-    background-image: url(assets/beerpong_guy_spritesheet.svg);
-    background-size: 300%;
+	width: 21vw;
+	height: 30vw;
+	background-image: url(assets/beerpong_guy_spritesheet.svg);
+	background-size: 300%;
 }
 
 .beerpong_walkcycle {
-    animation-name: beerpong_walkcycle_kf;
-    animation-duration: 2s;
-    animation-timing-function: steps(3);
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
+	animation-name: beerpong_walkcycle_kf;
+	animation-duration: 2s;
+	animation-timing-function: steps(3);
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
 }
 
 @keyframes beerpong_walkcycle_kf {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: -300% 0%;
-    }
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: -300% 0%;
+	}
 }
 
 #sara_container {
@@ -230,15 +230,14 @@
 	left: 22vw;
 	top: 14vw;
 	transform: scale(0.4)
-
 }
 
 #sara_sprite {
 
-    width: 21vw;
-    height: 30vw;
-    background-image: url(assets/sara_walkcycle.svg);
-    background-size: 400%;
+	width: 21vw;
+	height: 30vw;
+	background-image: url(assets/sara_walkcycle.svg);
+	background-size: 400%;
 }
 
 .sara_walkcycle {
@@ -252,29 +251,29 @@
 }
 
 @keyframes sara_walkcycle_kf {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: -400% 0%;
-    }
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: -400% 0%;
+	}
 }
 
 .martin_drinkcycle {
-    animation-name: martin_drinkcycle_kf;
-    animation-duration: 1.5s;
-    animation-timing-function: steps(5);
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
+	animation-name: martin_drinkcycle_kf;
+	animation-duration: 1.5s;
+	animation-timing-function: steps(5);
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
 }
 
 @keyframes martin_drinkcycle_kf {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: -500% 0;
-    }
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: -500% 0;
+	}
 }
 
 .sara_move_entrance {
@@ -298,4 +297,10 @@
 	}
 }
 
-#start {}
+
+.sara_speakcycle {
+	animation-name: sara_speakcycle_kf;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(3);
+}
