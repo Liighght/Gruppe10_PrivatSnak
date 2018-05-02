@@ -186,7 +186,7 @@
 #martin_sprite {
 	width: 20vw;
 	height: 28.3vw;
-	background-image: url(assets/Martin_spritesheet.svg);
+	background-image: url(assets/);
 	background-size: 600%
 }
 
@@ -236,8 +236,8 @@
 
 	width: 21vw;
 	height: 30vw;
-	background-image: url(assets/sara_walkcycle.svg);
-	background-size: 400%;
+	background-image: url(assets/sara_spritesheet.svg);
+	background-size: 500%;
 }
 
 .sara_walkcycle {
@@ -252,10 +252,10 @@
 
 @keyframes sara_walkcycle_kf {
 	0% {
-		background-position: 0 0;
+		background-position: 0 -200%;
 	}
 	100% {
-		background-position: -400% 0%;
+		background-position: -400% -200%;
 	}
 }
 
@@ -303,4 +303,66 @@
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
 	animation-timing-function: steps(3);
+}
+
+@keyframes sara_speakcycle_kf {
+	0% {
+		background-position: 0% -300%
+	}
+	100% {
+		background-position: -300% -300%
+	}
+}
+
+.sara_drink {
+	animation-name: sara_drink_kf;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: steps(5);
+}
+
+@keyframes sara_drink_kf {
+	0% {
+		background-position: 0% 0%
+	}
+	100% {
+		background-position: -500% 0%
+	}
+}
+
+.sara_shirt {
+	animation-name: sara_shirt_kf;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: steps(5);
+	animation-fill-mode: both;
+}
+
+@keyframes sara_shirt_kf {
+	0% {
+		background-position: 0% -100%
+	}
+	100% {
+		background-position: -500% -100%
+	}
+}
+
+.sara_sofa_pos {
+	animation-name: sara_sofa_pos_kf;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+}
+
+@keyframes sara_sofa_pos_kf {
+	0% {
+		left: 16vw;
+		top: 22vw;
+		transform: scale(1)
+	}
+	100% {
+		left: 5vw;
+		top: 25vw;
+		transform: scale(1)
+	}
 }
