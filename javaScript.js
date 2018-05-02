@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 $(window).on("load", startSkaerm);
 
 
@@ -71,10 +68,10 @@ mumlesnak
 
 function startSkaerm() {
 
-    console.log("startSkaerm");
-    $("#martin_sprite2").hide();
-    $("#sara_sprite2").hide();
-    $("#sara_sprite3").hide();
+	console.log("startSkaerm");
+	$("#martin_sprite2").hide();
+	$("#sara_sprite2").hide();
+	$("#sara_sprite3").hide();
 
 
 }
@@ -84,24 +81,24 @@ function startHistorie() {
 
 
 
-    $("#sara_container").addClass("sara_move_entrance");
+	$("#sara_container").addClass("sara_move_entrance");
 
-    $("#sara_sprite").addClass("sara_walkcycle");
+	$("#sara_sprite").addClass("sara_walkcycle");
 
-    $("#sara_container").on("animationend", ankommet);
-    /*
+	$("#sara_container").on("animationend", ankommet);
+	/*
 
-    teknomusik begynder
+	teknomusik begynder
 
-    start anim: af scene, baggrundgaester
+	start anim: af scene, baggrundgaester
 
-    start anim: sara kommer ind via .sara_walk_1
+	start anim: sara kommer ind via .sara_walk_1
 
-    start anim: .sara_walkcycle
+	start anim: .sara_walkcycle
 
 
 
-    */
+	*/
 
 }
 
@@ -109,25 +106,25 @@ function startHistorie() {
 
 function ankommet() {
 
-    $("#sara_container").removeClass("sara_move_entrance");
+	$("#sara_container").removeClass("sara_move_entrance");
 
-    $("#sara_sprite").removeClass("sara_walkcycle");
+	$("#sara_sprite").removeClass("sara_walkcycle");
 
-    /*
-
-
-
-    Stop anim: sara_walkcycle
-
-    Start anim: sara_speakcycle
-
-    Start anim: martin_speakcycle
-
-    Start lyd: #mumlesnak
+	/*
 
 
 
-    */
+	Stop anim: sara_walkcycle
+
+	Start anim: sara_speakcycle
+
+	Start anim: martin_speakcycle
+
+	Start lyd: #mumlesnak
+
+
+
+	*/
 
 }
 
@@ -135,7 +132,7 @@ function ankommet() {
 
 function shots() {
 
-    /*
+	/*
 
 
 
@@ -159,23 +156,23 @@ function shots() {
 
 function taeller() {
 
-    /*
+	/*
 
 
 
-    Tæl antal shots +1
+	Tæl antal shots +1
 
-    Show tomt_shotsflas
+	Show tomt_shotsflas
 
-    Start lyd: slurp
+	Start lyd: slurp
 
-    Start anim: Sara drikker
+	Start anim: Sara drikker
 
-    Valg: Er der taget 7 shots?
+	Valg: Er der taget 7 shots?
 
 
 
-    */
+	*/
 
 }
 
@@ -183,17 +180,17 @@ function taeller() {
 
 function saraFaarDetDaarligt() {
 
-    /*
+	/*
 
 
 
-    Start anim: sara_walk_2
+	Start anim: sara_walk_2
 
-    Start anim: .sara_walkcycle
+	Start anim: .sara_walkcycle
 
 
 
-    */
+	*/
 
 
 
@@ -203,21 +200,21 @@ function saraFaarDetDaarligt() {
 
 function saraBesvimer() {
 
-    /*
+	/*
 
 
 
-    Stop Anim: sara_walkcycle
+	Stop Anim: sara_walkcycle
 
-    Vis:: sara ligger i sofaen
+	Vis:: sara ligger i sofaen
 
-    Start anim: .martin_walkcycle
+	Start anim: .martin_walkcycle
 
-    Start anim: martin går mod Sara
+	Start anim: martin går mod Sara
 
 
 
-    */
+	*/
 
 }
 
@@ -231,23 +228,23 @@ function saraBesvimer() {
 
 function martinTagerbillede() {
 
-    /*
+	/*
 
-    Stop anim: martin_walkcycle
+	Stop anim: martin_walkcycle
 
-    Start anim: martin tager billede
+	Start anim: martin tager billede
 
-    Stop anim: baggrund_idle
+	Stop anim: baggrund_idle
 
-    Start anim: baggrunds_grund
+	Start anim: baggrunds_grund
 
-    Start lyd: kamera linse
+	Start lyd: kamera linse
 
-    Start lyd: baggrunds_grin
+	Start lyd: baggrunds_grin
 
 
 
-    */
+	*/
 
 
 
@@ -257,17 +254,17 @@ function martinTagerbillede() {
 
 function fadeToBlack() {
 
-    /*
+	/*
 
 
 
-    Vis: Sortskærm med tekst
+	Vis: Sortskærm med tekst
 
-    2 sek timer
+	2 sek timer
 
 
 
-    */
+	*/
 
 }
 
@@ -275,13 +272,13 @@ function fadeToBlack() {
 
 function dagenEfter() {
 
-    /*
+	/*
 
-    skift baggrund alle objekter skal hides
+	skift baggrund alle objekter skal hides
 
-    alle lyde slutter
+	alle lyde slutter
 
-    */
+	*/
 
 }
 
@@ -289,13 +286,13 @@ function dagenEfter() {
 
 function katastrofen() {
 
-    /*
+	/*
 
-    martin reagere
+	martin reagere
 
-    dramatisk musik
+	dramatisk musik
 
-    */
+	*/
 
 
 
@@ -305,19 +302,19 @@ function katastrofen() {
 
 function trist() {
 
-    /*
+	/*
 
 
 
-    Stop anim: martin_reagere
+	Stop anim: martin_reagere
 
-    Start anim: martin_grader
+	Start anim: martin_grader
 
-    start lyd: graeder
+	start lyd: graeder
 
 
 
-    */
+	*/
 
 
 
@@ -327,17 +324,16 @@ function trist() {
 
 function privatSnak() {
 
-    /*
+	/*
 
-    martin_grader
+	martin_grader
 
-    Show PrivatSnak telefon med link
+	Show PrivatSnak telefon med link
 
 
 
-    */
+	*/
 
 
 
 }
->>>>>>> origin/master

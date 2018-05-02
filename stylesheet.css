@@ -224,19 +224,13 @@
 }
 
 #sara_container {
-<<<<<<< HEAD
+
 	position: absolute;
 	z-index: 2;
 	left: 22vw;
 	top: 14vw;
 	transform: scale(0.4)
-=======
-    position: absolute;
-    z-index: 4;
-    left: 22vw;
-    top: 14vw;
-    transform: scale(0.4)
->>>>>>> origin/master
+
 }
 
 #sara_sprite {
@@ -248,19 +242,13 @@
 }
 
 .sara_walkcycle {
-<<<<<<< HEAD
+
 	animation-name: sara_walkcycle_kf;
 	animation-duration: 1s;
 	animation-timing-function: steps(4);
 	animation-iteration-count: infinite;
 	animation-fill-mode: both;
-=======
-    animation-name: sara_walkcycle_kf;
-    animation-duration: 2s;
-    animation-timing-function: steps(4);
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
->>>>>>> origin/master
+
 }
 
 @keyframes sara_walkcycle_kf {
