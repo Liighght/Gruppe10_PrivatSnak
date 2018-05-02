@@ -225,7 +225,7 @@
 
 #sara_container {
 	position: absolute;
-	z-index: 4;
+	z-index: 2;
 	left: 22vw;
 	top: 14vw;
 	transform: scale(0.4)
@@ -241,7 +241,7 @@
 
 .sara_walkcycle {
 	animation-name: sara_walkcycle_kf;
-	animation-duration: 2s;
+	animation-duration: 1s;
 	animation-timing-function: steps(4);
 	animation-iteration-count: infinite;
 	animation-fill-mode: both;
@@ -272,3 +272,26 @@
 		background-position: -500% 0;
 	}
 }
+
+.sara_move_entrance {
+	animation-name: sara_move_entrance_kf;
+	animation-duration: 3.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes sara_move_entrance_kf {
+	0% {
+		left: 22vw;
+		top: 14vw;
+		transform: scale(0.4)
+	}
+	100% {
+		left: 16vw;
+		top: 22vw;
+		transform: scale(1)
+	}
+}
+
+#start {}
