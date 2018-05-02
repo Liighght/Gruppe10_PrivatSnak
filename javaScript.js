@@ -107,7 +107,7 @@ function startHistorie() {
 function ankommet() {
     console.log("ankommet");
 
-
+    $("#sara_container").removeClass("sara_move_entrance");
     $("#sara_sprite").removeClass("sara_walkcycle");
 
     /*
