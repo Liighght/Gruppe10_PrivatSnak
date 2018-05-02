@@ -1,3 +1,5 @@
+var shotsDrukket = 0;
+
 $(window).on("load", startSkaerm);
 
 
@@ -69,36 +71,35 @@ mumlesnak
 function startSkaerm() {
 
     console.log("startSkaerm");
-    $("#martin_sprite2").hide();
-    $("#sara_sprite2").hide();
-    $("#sara_sprite3").hide();
+    $("#floss_sprite").addClass("floss_dance");
+    $("#beerpong_sprite").addClass("beerpong_walkcycle");
+    /* her skal der være en startskørm + knap til at starte historien*/
     startHistorie();
 
 }
 
 
 function startHistorie() {
-
-
+    console.log("startHistorie");
 
     $("#sara_container").addClass("sara_move_entrance");
-
     $("#sara_sprite").addClass("sara_walkcycle");
 
     $("#sara_container").on("animationend", ankommet);
+
     /*
 
-    teknomusik begynder
+	teknomusik begynder
 
-    start anim: af scene, baggrundgaester
+	start anim: af scene, baggrundgaester
 
-    start anim: sara kommer ind via .sara_walk_1
+	start anim: sara kommer ind via .sara_walk_1
 
-    start anim: .sara_walkcycle
+	start anim: .sara_walkcycle
 
 
 
-    */
+	*/
 
 }
 
@@ -107,9 +108,12 @@ function startHistorie() {
 function ankommet() {
     console.log("ankommet");
 
-    $("#sara_container").removeClass("sara_move_entrance");
+    $("#sara_container").off("animationend", ankommet);
     $("#sara_sprite").removeClass("sara_walkcycle");
 
+    $("#sara_sprite").addClass("sara_speakcycle");
+
+    setTimeout(saraSidder, 2000);
     /*
 
 
@@ -130,7 +134,14 @@ function ankommet() {
 
 
 
-function shots() {
+function saraSidder() {
+    console.log("saraSidder");
+
+    $("#sara_sprite").removeClass("sara_speakcycle");
+
+    $("#sara_sprite").addClass("sara_sidder");
+
+    kanKlikke();
 
     /*
 
@@ -152,9 +163,45 @@ function shots() {
 
 }
 
+function kanKlikke() {
+    console.log("kanKlikke");
 
+    $(".shot").addClass("shot_puls");
+    $(".shot").on("click", klikPaaShot);
+
+}
+
+function klikPaaShot() {
+    $(this).hide();
+    shotsDrukket++;
+    console.log("Der er blevet drukket " + shotsDrukket + " shots");
+
+
+    $(".shot").removeClass("shot_puls");
+    $(".shot").off("click", klikPaaShot);
+
+    $("#sara_sprite").addClass("sara_drink");
+    $("#sara_container").on("animationend", taeller);
+}
 
 function taeller() {
+    console.log("taeller, der er blevet drukket et shot");
+
+    if (shotsDrukket == 3) {
+        console.log("Der er blevet drukket 3 shots!");
+        $("#sara_sprite").removeClass("sara_drink");
+        $("#sara_container").off("animationend", taeller);
+
+        saraBesvimer();
+
+    } else {
+        console.log("Drik flere shots");
+        $("#sara_sprite").removeClass("sara_drink");
+        $("#sara_container").off("animationend", taeller);
+
+        kanKlikke();
+    }
+
 
     /*
 
@@ -178,7 +225,16 @@ function taeller() {
 
 
 
-function saraFaarDetDaarligt() {
+function saraBesvimer() {
+    console.log("saraBesvimer");
+
+    $("#sara_sprite").removeClass("sara_sidder");
+    $("#sara_container").addClass("sara_sofa_pos");
+
+    $("#sara_sprite").addClass("sara_shirt");
+    $("#sara_container").on("animationend", saraLigger);
+
+
 
     /*
 
@@ -198,7 +254,15 @@ function saraFaarDetDaarligt() {
 
 
 
-function saraBesvimer() {
+function saraLigger() {
+    console.log("saraLigger");
+
+    $("#sara_sprite").removeClass("sara_shirt");
+    $("#sara_container").off("animationend", saraLigger);
+
+    $("#sara_sprite").addClass("sara_ligger");
+
+    martinValg();
 
     /*
 
@@ -223,7 +287,9 @@ function saraBesvimer() {
 /* VALG, Martin finder Sara på sofaen og skal tage et valg om at stoppe en gæst til festen, da han kan se personen skal til at tage et billede, Han kan vælge imellem at stoppe det via at ringe til privatsnak eller ikke at gøre noget.   */
 
 
+function martinValg() {
 
+}
 
 
 function martinTagerbillede() {
