@@ -508,6 +508,7 @@ function dagenEfter() {
 function katastrofen() {
 	console.log("se besked");
 	console.log(idiot);
+	$("#martin_sprite").removeClass("sidderISengen");
 	$("#martin_sprite").addClass("martin_morgen");
 	$("#martin_sprite").on("animationend", flagDecider);
 }
@@ -530,6 +531,7 @@ function negativt() {
 	$("#telefon_container").show();
 	$("#skyldfoelse")[0].play();
 	$("#skyldfoelse")[0].volume = 0.8;
+	$("#telefon_sprite").on("click", window.open("http://privatsnak.dk/13-15/"))
 }
 
 
@@ -545,4 +547,5 @@ function positivt() {
 	$("#martin_sprite").addClass("martin_love");
 	$("#telefon_container").show();
 	$("#telefon").addClass("telefon_positivt");
+	$("#telefon_sprite").on("click", window.open("http://privatsnak.dk/13-15/hvad-spoerger-andre-om/hvordan-flirter-man-med-%C3%A9n-man-godt-kan-lide/"))
 }
