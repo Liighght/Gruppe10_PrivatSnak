@@ -414,10 +414,10 @@
 
 @keyframes martin_reacts_kf {
     0% {
-        background-position: 0 -100%;
+        background-position: 0 -99.8%;
     }
     100% {
-        background-position: -500% -100%;
+        background-position: -500% -99.8%;
     }
 }
 
@@ -431,10 +431,10 @@
 
 @keyframes martin_cover_kf {
     0% {
-        background-position: 0 -400%;
+        background-position: 0 -399.75%;
     }
     100% {
-        background-position: -700% -400%;
+        background-position: -700% -399.75%;
     }
 }
 
@@ -467,10 +467,10 @@
 @keyframes martin_morgen_kf {
 
     0% {
-        background-position: 0% -300%
+        background-position: 0% -299.8%
     }
     100% {
-        background-position: -300% -300%
+        background-position: -300% -299.8%
     }
 }
 
@@ -501,16 +501,16 @@
 
 @keyframes martin_pic_kf {
     0% {
-        background-position: 0% -200%;
+        background-position: 0% -199.8%;
     }
     100% {
-        background-position: -300% -200%;
+        background-position: -300% -199.8%;
     }
 
 }
 
 .martin_pic_pos {
-    background-position: -100% -200%;
+    background-position: -100% -199.8%;
 }
 
 
@@ -556,9 +556,6 @@
     background-position: 0% 0%;
 }
 
-.sara_sofa_pos {
-    left: 14vw;
-}
 
 .sara_drink {
     animation-name: sara_drink_kf;
@@ -586,10 +583,10 @@
 
 @keyframes sara_shirt_off_kf {
     0% {
-        background-position: 0% -100%;
+        background-position: 0% -99.8%;
     }
     100% {
-        background-position: -500% -100%;
+        background-position: -500% -99.8%;
     }
 
 }
@@ -604,10 +601,10 @@
 
 @keyframes sara_shirt_on_kf {
     0% {
-        background-position: -400% -100%;
+        background-position: -400% -99.8%;
     }
     100% {
-        background-position: 0% -100%;
+        background-position: 0% -99.8%;
     }
 }
 
@@ -634,7 +631,7 @@
 
 .sara_ligger {
 
-    background-position: -400% -100%;
+    background-position: -400% -99.8%;
 }
 
 .fade_to_black_pos {

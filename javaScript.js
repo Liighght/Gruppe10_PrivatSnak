@@ -1,5 +1,5 @@
 var shotsDrukket = 0;
-var idiot = false;
+var idiot = 0;
 
 $(window).on("load", startSkaerm);
 
@@ -363,12 +363,12 @@ function saraShirtOn() {
     $("#sara_sprite").removeClass("sara_ligger");
     $("#sara_sprite").addClass("sara_shirt_on");
 
-    setTimeout(fadeToBlack, 5000);
+    setTimeout(fadeToBlack, 3500);
 }
 
 
 function billedeValgt() {
-    var idiot = true;
+    idiot++;
 
     console.log("billedeValgt");
     console.log(idiot);
@@ -420,7 +420,7 @@ function martinBilledePos() {
 
     $("#martin_sprite").addClass("martin_pic_pos");
 
-    setTimeout(fadeToBlack, 3500);
+    setTimeout(fadeToBlack, 2100);
 }
 
 
