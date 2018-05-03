@@ -72,10 +72,10 @@
 
 @keyframes knap_puls1_kf {
     0% {
-        transform: scale(0.9)
+        transform: scale(0.9);
     }
     50% {
-        transform: scale(1.1)
+        transform: scale(1.1);
     }
 }
 
@@ -85,10 +85,10 @@
 
 @keyframes knap_pul2_kf {
     0% {
-        transform: scale(1.1)
+        transform: scale(1.1);
     }
     100% {
-        transform: scale(1.3)
+        transform: scale(1.3);
     }
 }
 
@@ -206,7 +206,7 @@
     width: 8.5vw;
     transform: scale(0.3);
     top: 37.5vw;
-    left: 23vw
+    left: 23vw;
 }
 
 .kop2 {
@@ -217,7 +217,7 @@
     width: 8.5vw;
     transform: scale(0.3);
     top: 36.5vw;
-    left: 26vw
+    left: 26vw;
 }
 
 .kop3 {
@@ -228,7 +228,7 @@
     width: 8.5vw;
     transform: scale(0.3);
     top: 37vw;
-    left: 30vw
+    left: 30vw;
 }
 
 .kop4 {
@@ -352,6 +352,9 @@
 
     position: absolute;
     z-index: 4;
+}
+
+.martin_start_pos {
     left: 45vw;
     top: 25vw;
 }
@@ -399,14 +402,14 @@
 }
 
 .martin_reacts {
-    animation-name: martin_react_kf;
+    animation-name: martin_reacts_kf;
     animation-duration: 2s;
     animation-timing-function: steps(5);
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
 
-@keyframes martin_react_kf {
+@keyframes martin_reacts_kf {
     0% {
         background-position: 0 -100%;
     }
@@ -420,6 +423,7 @@
     animation-duration: 4s;
     animation-timing-function: steps(7);
     animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 @keyframes martin_cover_kf {
@@ -431,6 +435,25 @@
     }
 }
 
+.martin_cover_move {
+    animation-name: martin_cover_move_kf;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes martin_cover_move_kf {
+    0% {
+        left: 45vw;
+        top: 25vw;
+    }
+    100% {
+        left: 15vw;
+        top: 27vw;
+    }
+}
+
+
 .martin_morgen {
     animation-name: martin_morgen_kf;
     animation-duration: 3s;
@@ -440,10 +463,10 @@
 
 @keyframes martin_morgen_kf {
     0% {
-        background-position: 0% -300%
+        background-position: 0% -300%;
     }
     100% {
-        background-position: -300% -300%
+        background-position: -300% -300%;
     }
 }
 
@@ -456,10 +479,10 @@
 
 @keyframes martin_love_kf {
     0% {
-        background-position: 0% -500%
+        background-position: 0% -500%;
     }
     100% {
-        background-position: -300% -500%
+        background-position: -300% -500%;
     }
 }
 
@@ -468,15 +491,20 @@
     animation-duration: 1.5s;
     animation-iteration-count: 1;
     animation-timing-function: steps(3);
+    animation-fill-mode: both;
 }
 
 @keyframes martin_pic_kf {
     0% {
-        background-position: 0% -200%
+        background-position: 0% -200%;
     }
     100% {
-        background-position: -300% -200%
+        background-position: -300% -200%;
     }
+}
+
+.martin_pic_pos {
+    background-position: -100% -200%;
 }
 
 
@@ -538,15 +566,15 @@
     }
 }
 
-.sara_shirt {
-    animation-name: sara_shirt_kf;
+.sara_shirt_off {
+    animation-name: sara_shirt_off_kf;
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-timing-function: steps(5);
     animation-fill-mode: both;
 }
 
-@keyframes sara_shirt_kf {
+@keyframes sara_shirt_off_kf {
     0% {
         background-position: 0% -100%;
     }
@@ -554,6 +582,24 @@
         background-position: -500% -100%;
     }
 }
+
+.sara_shirt_on {
+    animation-name: sara_shirt_on_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(4);
+    animation-fill-mode: both;
+}
+
+@keyframes sara_shirt_on_kf {
+    0% {
+        background-position: -400% -100%;
+    }
+    100% {
+        background-position: 0% -100%;
+    }
+}
+
 
 .sara_sofa_pos {
     animation-name: sara_sofa_pos_kf;
