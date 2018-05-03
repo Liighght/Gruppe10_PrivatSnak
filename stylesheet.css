@@ -6,6 +6,16 @@
 	position: absolute;
 }
 
+#scene2 {
+	background-image: url(assets/Martins_vaerlse.png);
+	background-size: 100%;
+	width: 100vw;
+	height: 56.25vw;
+	z-index: 100;
+	position: absolute;
+
+}
+
 #bord {
 	background-image: url(assets/bord.svg);
 	width: 29vw;
@@ -36,8 +46,6 @@
 	top: 26.5vw;
 	right: 35vw;
 }
-
-
 
 #sofa {
 	position: absolute;
@@ -180,15 +188,16 @@
 	position: absolute;
 	z-index: 4;
 	left: 45vw;
-	top: 25vw
+	top: 25vw;
 }
 
 #martin_sprite {
-	width: 20vw;
-	height: 28.3vw;
-	background-image: url(assets/);
-	background-size: 600%
+	width: 21vw;
+	height: 30vw;
+	background-image: url(assets/Martin_spritesheet.svg);
+	background-size: 700%;
 }
+
 
 #beerpong_container {
 	position: absolute;
@@ -273,6 +282,87 @@
 	}
 	100% {
 		background-position: -500% 0;
+	}
+}
+
+.martin_reacts {
+	animation-name: martin_react_kf;
+	animation-duration: 2s;
+	animation-timing-function: steps(5);
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+}
+
+@keyframes martin_react_kf {
+	0% {
+		background-position: 0 -100%;
+	}
+	100% {
+		background-position: -500% -100%;
+	}
+}
+
+.martin_cover {
+	animation-name: martin_cover_kf;
+	animation-duration: 4s;
+	animation-timing-function: steps(7);
+	animation-iteration-count: 1;
+}
+
+@keyframes martin_cover_kf {
+	0% {
+		background-position: 0 -400%;
+	}
+	100% {
+		background-position: -700% -400%;
+	}
+}
+
+.martin_morgen {
+	animation-name: martin_morgen_kf;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-timing-function: steps(3);
+}
+
+@keyframes martin_morgen_kf {
+	0% {
+		background-position: 0% -300%
+	}
+	100% {
+		background-position: -300% -300%
+	}
+}
+
+.martin_love {
+	animation-name: martin_love_kf;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-timing-function: steps(3);
+}
+
+@keyframes martin_love_kf {
+	0% {
+		background-position: 0% -500%
+	}
+	100% {
+		background-position: -300% -500%
+	}
+}
+
+.martin_pic {
+	animation-name: martin_pic_kf;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: steps(3);
+}
+
+@keyframes martin_pic_kf {
+	0% {
+		background-position: 0% -200%
+	}
+	100% {
+		background-position: -300% -200%
 	}
 }
 
