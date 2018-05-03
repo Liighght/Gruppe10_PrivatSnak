@@ -73,12 +73,15 @@ function startSkaerm() {
 	console.log("startSkaerm");
 
 	/* her skal der være en startskærm + knap til at starte historien*/
-	$("#scene2").hide();
+	//	$("#scene2").hide();
 	$("#fadetoblack").hide();
+	//$("#tramp_musik")[0].play();
+	$("#tramp_musik")[0].volume = 0.2;
+	$("#telefon_container").hide();
 	$("#floss_sprite").addClass("floss_dance");
 	$("#beerpong_sprite").addClass("beerpong_walkcycle");
 
-	startHistorie();
+	fadeToBlack();
 
 
 }
@@ -111,16 +114,14 @@ function startHistorie() {
 
 
 function ankommet() {
-	console.log("ankommet");
-
+	console.log("ankommet + snak");
+	$("#sarafest")[0].play();
 	$("#sara_container").off("animationend", ankommet);
 	$("#sara_sprite").removeClass("sara_walkcycle");
 
 	$("#sara_sprite").addClass("sara_speakcycle");
 	$("#martin_sprite").addClass("martin_speakcycle");
-
-
-	setTimeout(saraSidder, 10000);
+	$("#sarafest").on("ended", saraSidder);
 	/*
 
 
@@ -145,6 +146,8 @@ function saraSidder() {
 	console.log("saraSidder");
 
 	$("#sara_sprite").removeClass("sara_speakcycle");
+
+
 	$("#martin_sprite").removeClass("martin_speakcycle");
 
 	$("#sara_sprite").addClass("sara_sidder");
@@ -174,7 +177,7 @@ function saraSidder() {
 
 function kanKlikke() {
 	console.log("kanKlikke");
-
+	$("#saa_der_shots")[0].play();
 	$(".shot").addClass("shot_puls");
 	$(".shot").on("click", klikPaaShot);
 
@@ -184,8 +187,7 @@ function klikPaaShot() {
 	$(this).hide();
 	shotsDrukket++;
 	console.log("Der er blevet drukket " + shotsDrukket + " shots");
-
-
+	$("#slurp_lyd")
 	$(".shot").removeClass("shot_puls");
 	$(".shot").off("click", klikPaaShot);
 
@@ -333,46 +335,34 @@ function martinTagerbillede() {
 
 
 function fadeToBlack() {
+	console.log("fade to black");
+	$("#fadetoblack").show();
+	setTimeout(dagenEfter, 2000);
+	$("#martin_container").addClass("fade_to_black_pos")
 
-	/*
-
-
-
-	Vis: Sortskærm med tekst
-
-	2 sek timer
-
-
-
-	*/
 
 }
 
 
 
 function dagenEfter() {
+	console.log("dagen efter");
+	$("#fadetoblack").hide();
+	$("#martin_sprite").addClass("sidderISengen");
+	$("#iphone")[0].play();
+	$("#iphone")[0].volume = 0.1;
+	$("#iphone").on("ended", katastrofen);
 
-	/*
-
-	skift baggrund alle objekter skal hides
-
-	alle lyde slutter
-
-	*/
 
 }
 
 
 
 function katastrofen() {
+	console.log("se besked");
+	$("#martin_sprite").addClass("martin_morgen");
+	$("#martin_sprite").on("animationend", trist);
 
-	/*
-
-	martin reagere
-
-	dramatisk musik
-
-	*/
 
 
 
@@ -381,20 +371,11 @@ function katastrofen() {
 
 
 function trist() {
+	console.log("beskeder");
+	$("#martin_sprite").removeClass("martin_morgen");
+	$("#telefon_container").show();
+	$("#telefon").addClass("telefon_positivt");
 
-	/*
-
-
-
-	Stop anim: martin_reagere
-
-	Start anim: martin_grader
-
-	start lyd: graeder
-
-
-
-	*/
 
 
 
