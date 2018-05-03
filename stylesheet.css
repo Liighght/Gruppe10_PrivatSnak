@@ -1,3 +1,13 @@
+#forside {
+    background-image: url(assets/privatfestenforside.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    z-index: 2000;
+    position: absolute;
+
+}
+
 #baggrund {
     background-image: url(assets/fest_lokale.svg);
     width: 100vw;
