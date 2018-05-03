@@ -216,7 +216,7 @@
 
 #beerpong_sprite {
 
-    width: 21vw;
+    width: 20.8vw;
     height: 30vw;
     background-image: url(assets/beerpong_guy_spritesheet.svg);
     background-size: 300%;
@@ -387,7 +387,7 @@
     }
 }
 
-.sara_ligger{
+.sara_ligger {
 
-        background-position: -400% -100%;
+    background-position: -400% -100%;
 }

@@ -288,7 +288,7 @@ function saraLigger() {
 
 
 function martinValg() {
-
+    console.log("martinValg");
 }
 
 
