@@ -70,24 +70,29 @@ mumlesnak
 
 function startSkaerm() {
 
-    console.log("startSkaerm");
-    $("#floss_sprite").addClass("floss_dance");
-    $("#beerpong_sprite").addClass("beerpong_walkcycle");
-    /* her skal der være en startskørm + knap til at starte historien*/
-    startHistorie();
+	console.log("startSkaerm");
+
+	/* her skal der være en startskærm + knap til at starte historien*/
+	$("#scene2").hide();
+	$("#fadetoblack").hide();
+	$("#floss_sprite").addClass("floss_dance");
+	$("#beerpong_sprite").addClass("beerpong_walkcycle");
+
+	startHistorie();
+
 
 }
 
 
 function startHistorie() {
-    console.log("startHistorie");
+	console.log("startHistorie");
 
-    $("#sara_container").addClass("sara_move_entrance");
-    $("#sara_sprite").addClass("sara_walkcycle");
+	$("#sara_container").addClass("sara_move_entrance");
+	$("#sara_sprite").addClass("sara_walkcycle");
 
-    $("#sara_container").on("animationend", ankommet);
+	$("#sara_container").on("animationend", ankommet);
 
-    /*
+	/*
 
 	teknomusik begynder
 
@@ -106,44 +111,48 @@ function startHistorie() {
 
 
 function ankommet() {
-    console.log("ankommet");
+	console.log("ankommet");
 
-    $("#sara_container").off("animationend", ankommet);
-    $("#sara_sprite").removeClass("sara_walkcycle");
+	$("#sara_container").off("animationend", ankommet);
+	$("#sara_sprite").removeClass("sara_walkcycle");
 
-    $("#sara_sprite").addClass("sara_speakcycle");
-
-    setTimeout(saraSidder, 2000);
-    /*
+	$("#sara_sprite").addClass("sara_speakcycle");
+	$("#martin_sprite").addClass("martin_speakcycle");
 
 
-
-    Stop anim: sara_walkcycle
-
-    Start anim: sara_speakcycle
-
-    Start anim: martin_speakcycle
-
-    Start lyd: #mumlesnak
+	setTimeout(saraSidder, 10000);
+	/*
 
 
 
-    */
+	Stop anim: sara_walkcycle
+
+	Start anim: sara_speakcycle
+
+	Start anim: martin_speakcycle
+
+	Start lyd: #mumlesnak
+
+
+
+	*/
 
 }
 
 
 
 function saraSidder() {
-    console.log("saraSidder");
+	console.log("saraSidder");
 
-    $("#sara_sprite").removeClass("sara_speakcycle");
+	$("#sara_sprite").removeClass("sara_speakcycle");
+	$("#martin_sprite").removeClass("martin_speakcycle");
 
-    $("#sara_sprite").addClass("sara_sidder");
+	$("#sara_sprite").addClass("sara_sidder");
+	$("#martin_sprite").addClass("martin_drinkcycle");
 
-    kanKlikke();
+	kanKlikke();
 
-    /*
+	/*
 
 
 
@@ -164,89 +173,89 @@ function saraSidder() {
 }
 
 function kanKlikke() {
-    console.log("kanKlikke");
+	console.log("kanKlikke");
 
-    $(".shot").addClass("shot_puls");
-    $(".shot").on("click", klikPaaShot);
+	$(".shot").addClass("shot_puls");
+	$(".shot").on("click", klikPaaShot);
 
 }
 
 function klikPaaShot() {
-    $(this).hide();
-    shotsDrukket++;
-    console.log("Der er blevet drukket " + shotsDrukket + " shots");
+	$(this).hide();
+	shotsDrukket++;
+	console.log("Der er blevet drukket " + shotsDrukket + " shots");
 
 
-    $(".shot").removeClass("shot_puls");
-    $(".shot").off("click", klikPaaShot);
+	$(".shot").removeClass("shot_puls");
+	$(".shot").off("click", klikPaaShot);
 
-    $("#sara_sprite").addClass("sara_drink");
-    $("#sara_container").on("animationend", taeller);
+	$("#sara_sprite").addClass("sara_drink");
+	$("#sara_container").on("animationend", taeller);
 }
 
 function taeller() {
-    console.log("taeller, der er blevet drukket et shot");
+	console.log("taeller, der er blevet drukket et shot");
 
-    if (shotsDrukket == 3) {
-        console.log("Der er blevet drukket 3 shots!");
-        $("#sara_sprite").removeClass("sara_drink");
-        $("#sara_container").off("animationend", taeller);
+	if (shotsDrukket == 1) {
+		console.log("Der er blevet drukket 3 shots! if statement opfyldt");
+		$("#sara_sprite").removeClass("sara_drink");
+		$("#sara_container").off("animationend", taeller);
 
-        saraBesvimer();
+		saraBesvimer();
 
-    } else {
-        console.log("Drik flere shots");
-        $("#sara_sprite").removeClass("sara_drink");
-        $("#sara_container").off("animationend", taeller);
+	} else {
+		console.log("Drik flere shots");
+		$("#sara_sprite").removeClass("sara_drink");
+		$("#sara_container").off("animationend", taeller);
 
-        kanKlikke();
-    }
-
-
-    /*
+		kanKlikke();
+	}
 
 
-
-    Tæl antal shots +1
-
-    Show tomt_shotsflas
-
-    Start lyd: slurp
-
-    Start anim: Sara drikker
-
-    Valg: Er der taget 7 shots?
+	/*
 
 
 
-    */
+	Tæl antal shots +1
+
+	Show tomt_shotsflas
+
+	Start lyd: slurp
+
+	Start anim: Sara drikker
+
+	Valg: Er der taget 7 shots?
+
+
+
+	*/
 
 }
 
 
 
 function saraBesvimer() {
-    console.log("saraBesvimer");
+	console.log("saraBesvimer");
 
-    $("#sara_sprite").removeClass("sara_sidder");
-    $("#sara_container").addClass("sara_sofa_pos");
+	$("#sara_sprite").removeClass("sara_sidder");
+	$("#sara_container").addClass("sara_sofa_pos");
 
-    $("#sara_sprite").addClass("sara_shirt");
-    $("#sara_container").on("animationend", saraLigger);
-
-
-
-    /*
+	$("#sara_sprite").addClass("sara_shirt");
+	$("#sara_container").on("animationend", saraLigger);
 
 
 
-    Start anim: sara_walk_2
-
-    Start anim: .sara_walkcycle
+	/*
 
 
 
-    */
+	Start anim: sara_walk_2
+
+	Start anim: .sara_walkcycle
+
+
+
+	*/
 
 
 
@@ -255,30 +264,31 @@ function saraBesvimer() {
 
 
 function saraLigger() {
-    console.log("saraLigger");
+	console.log("saraLigger");
 
-    $("#sara_sprite").removeClass("sara_shirt");
-    $("#sara_container").off("animationend", saraLigger);
+	$("#sara_sprite").removeClass("sara_shirt");
+	$("#sara_container").off("animationend", saraLigger);
 
-    $("#sara_sprite").addClass("sara_ligger");
+	$("#sara_sprite").addClass("sara_ligger");
+	$("#martin_sprite").removeClass("martin_drinkcycle");
 
-    martinValg();
+	martinValg();
 
-    /*
-
-
-
-    Stop Anim: sara_walkcycle
-
-    Vis:: sara ligger i sofaen
-
-    Start anim: .martin_walkcycle
-
-    Start anim: martin går mod Sara
+	/*
 
 
 
-    */
+	Stop Anim: sara_walkcycle
+
+	Vis:: sara ligger i sofaen
+
+	Start anim: .martin_walkcycle
+
+	Start anim: martin går mod Sara
+
+
+
+	*/
 
 }
 
@@ -288,29 +298,33 @@ function saraLigger() {
 
 
 function martinValg() {
-    console.log("martinValg");
+	console.log("martinValg");
+
+	$("#martin_sprite").addClass("martin_reacts");
+
+
 }
 
 
 function martinTagerbillede() {
 
-    /*
+	/*
 
-    Stop anim: martin_walkcycle
+	Stop anim: martin_walkcycle
 
-    Start anim: martin tager billede
+	Start anim: martin tager billede
 
-    Stop anim: baggrund_idle
+	Stop anim: baggrund_idle
 
-    Start anim: baggrunds_grund
+	Start anim: baggrunds_grund
 
-    Start lyd: kamera linse
+	Start lyd: kamera linse
 
-    Start lyd: baggrunds_grin
+	Start lyd: baggrunds_grin
 
 
 
-    */
+	*/
 
 
 
@@ -320,17 +334,17 @@ function martinTagerbillede() {
 
 function fadeToBlack() {
 
-    /*
+	/*
 
 
 
-    Vis: Sortskærm med tekst
+	Vis: Sortskærm med tekst
 
-    2 sek timer
+	2 sek timer
 
 
 
-    */
+	*/
 
 }
 
@@ -338,13 +352,13 @@ function fadeToBlack() {
 
 function dagenEfter() {
 
-    /*
+	/*
 
-    skift baggrund alle objekter skal hides
+	skift baggrund alle objekter skal hides
 
-    alle lyde slutter
+	alle lyde slutter
 
-    */
+	*/
 
 }
 
@@ -352,13 +366,13 @@ function dagenEfter() {
 
 function katastrofen() {
 
-    /*
+	/*
 
-    martin reagere
+	martin reagere
 
-    dramatisk musik
+	dramatisk musik
 
-    */
+	*/
 
 
 
@@ -368,19 +382,19 @@ function katastrofen() {
 
 function trist() {
 
-    /*
+	/*
 
 
 
-    Stop anim: martin_reagere
+	Stop anim: martin_reagere
 
-    Start anim: martin_grader
+	Start anim: martin_grader
 
-    start lyd: graeder
+	start lyd: graeder
 
 
 
-    */
+	*/
 
 
 
@@ -390,15 +404,15 @@ function trist() {
 
 function privatSnak() {
 
-    /*
+	/*
 
-    martin_grader
+	martin_grader
 
-    Show PrivatSnak telefon med link
+	Show PrivatSnak telefon med link
 
 
 
-    */
+	*/
 
 
 
