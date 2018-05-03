@@ -17,79 +17,79 @@
 }
 
 #fadetoblack {
-	background-image: url(assets/dagen_efter.svg);
-	background-size: 100%;
-	width: 100vw;
-	height: 56.25vw;
-	z-index: 200;
-	position: absolute;
+    background-image: url(assets/dagen_efter.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    z-index: 200;
+    position: absolute;
 }
 
 #valg1 {
-	background-image: url(assets/valgknap_hjaelp_sara.svg);
-	width: 17vw;
-	height: 14vw;
+    background-image: url(assets/valgknap_hjaelp_sara.svg);
+    width: 17vw;
+    height: 14vw;
 }
 
 #valg1_container {
-	position: absolute;
-	z-index: 5;
-	top: 14vw;
-	left: 35vw;
+    position: absolute;
+    z-index: 5;
+    top: 14vw;
+    left: 35vw;
 
 }
 
 #valg2 {
-	background-image: url(assets/Kamera_valg.svg);
-	width: 16vw;
-	height: 14vw;
+    background-image: url(assets/Kamera_valg.svg);
+    width: 16vw;
+    height: 14vw;
 }
 
 #valg2_container {
-	position: absolute;
-	z-index: 5;
-	top: 14vw;
-	left: 55vw;
-	transform: scale(0.9);
+    position: absolute;
+    z-index: 5;
+    top: 14vw;
+    left: 55vw;
+    transform: scale(0.9);
 
 }
 
 #valg {
-	position: absolute;
-	background-image: url(assets/Knap_martin_valg.svg);
-	width: 15.5vw;
-	height: 10vw;
-	z-index: 5;
-	top: 5vw;
-	left: 45vw;
-	transform: scale(1.3);
+    position: absolute;
+    background-image: url(assets/Knap_martin_valg.svg);
+    width: 15.5vw;
+    height: 10vw;
+    z-index: 5;
+    top: 5vw;
+    left: 45vw;
+    transform: scale(1.3);
 
 }
 
 .knap_puls1 {
-	animation: knap_puls1_kf 1s alternate infinite;
+    animation: knap_puls1_kf 1s alternate infinite;
 }
 
 @keyframes knap_puls1_kf {
-	0% {
-		transform: scale(0.9)
-	}
-	50% {
-		transform: scale(1.1)
-	}
+    0% {
+        transform: scale(0.9)
+    }
+    50% {
+        transform: scale(1.1)
+    }
 }
 
 .knap_puls2 {
-	animation: knap_pul2_kf 1s alternate infinite;
+    animation: knap_pul2_kf 1s alternate infinite;
 }
 
 @keyframes knap_pul2_kf {
-	0% {
-		transform: scale(1.1)
-	}
-	100% {
-		transform: scale(1.3)
-	}
+    0% {
+        transform: scale(1.1)
+    }
+    100% {
+        transform: scale(1.3)
+    }
 }
 
 #bord {
@@ -479,21 +479,6 @@
     }
 }
 
-.martin_speakcycle {
-	animation-name: martin_speakcycle_kf;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-	animation-timing-function: steps(3);
-}
-
-@keyframes martin_speakcycle_kf {
-	0% {
-		background-position: 0% -300%;
-	}
-	100% {
-		background-position: -300% -300%;
-	}
-}
 
 .sara_move_entrance {
     animation-name: sara_move_entrance_kf;
