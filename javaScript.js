@@ -71,10 +71,15 @@ mumlesnak
 function startSkaerm() {
 
     console.log("startSkaerm");
+
+    /* her skal der være en startskærm + knap til at starte historien*/
+    $("#scene2").hide();
+
     $("#floss_sprite").addClass("floss_dance");
     $("#beerpong_sprite").addClass("beerpong_walkcycle");
-    /* her skal der være en startskørm + knap til at starte historien*/
+
     startHistorie();
+
 
 }
 
@@ -112,8 +117,10 @@ function ankommet() {
     $("#sara_sprite").removeClass("sara_walkcycle");
 
     $("#sara_sprite").addClass("sara_speakcycle");
+    $("#martin_sprite").addClass("martin_speakcycle");
 
-    setTimeout(saraSidder, 2000);
+
+    setTimeout(saraSidder, 10000);
     /*
 
 
@@ -138,8 +145,10 @@ function saraSidder() {
     console.log("saraSidder");
 
     $("#sara_sprite").removeClass("sara_speakcycle");
+    $("#martin_sprite").removeClass("martin_speakcycle");
 
     $("#sara_sprite").addClass("sara_sidder");
+    $("#martin_sprite").addClass("martin_drinkcycle");
 
     kanKlikke();
 
@@ -187,8 +196,8 @@ function klikPaaShot() {
 function taeller() {
     console.log("taeller, der er blevet drukket et shot");
 
-    if (shotsDrukket == 3) {
-        console.log("Der er blevet drukket 3 shots!");
+    if (shotsDrukket == 1) {
+        console.log("Der er blevet drukket 3 shots! if statement opfyldt");
         $("#sara_sprite").removeClass("sara_drink");
         $("#sara_container").off("animationend", taeller);
 
@@ -261,6 +270,7 @@ function saraLigger() {
     $("#sara_container").off("animationend", saraLigger);
 
     $("#sara_sprite").addClass("sara_ligger");
+    $("#martin_sprite").removeClass("martin_drinkcycle");
 
     martinValg();
 
@@ -288,6 +298,10 @@ function saraLigger() {
 
 
 function martinValg() {
+    console.log("martinValg");
+
+    $("#martin_sprite").addClass("martin_reacts");
+
 
 }
 
