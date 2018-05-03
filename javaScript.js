@@ -73,6 +73,7 @@ function startSkaerm() {
 
     console.log("startSkaerm");
 
+
     /* her skal der være en startskærm + knap til at starte historien*/
 
     /* elementer der skal hides*/
@@ -87,8 +88,11 @@ function startSkaerm() {
     $("#floss_sprite").addClass("floss_dance");
     $("#beerpong_sprite").addClass("beerpong_walkcycle");
 
-    startHistorie();
+    $("#tramp_musik")[0].play();
+    $("#tramp_musik")[0].volume = 0.2;
+    $("#telefon_container").hide();
 
+    startHistorie();
 
 }
 
@@ -121,31 +125,16 @@ function startHistorie() {
 
 
 function ankommet() {
-    console.log("ankommet");
 
+    console.log("ankommet + snak");
+    $("#sarafest")[0].play();
     $("#sara_container").off("animationend", ankommet);
     $("#sara_sprite").removeClass("sara_walkcycle");
 
     $("#sara_sprite").addClass("sara_speakcycle");
     $("#martin_sprite").addClass("martin_speakcycle");
 
-
-    setTimeout(saraSidder, 1500);
-    /*
-
-
-
-    Stop anim: sara_walkcycle
-
-    Start anim: sara_speakcycle
-
-    Start anim: martin_speakcycle
-
-    Start lyd: #mumlesnak
-
-
-
-    */
+    $("#sarafest").on("ended", saraSidder);
 
 }
 
@@ -183,14 +172,16 @@ function saraSidder() {
 }
 
 function kanKlikke() {
-    console.log("kanKlikke");
 
+    console.log("kanKlikke");
+    $("#saa_der_shots")[0].play();
     $(".shot").addClass("shot_puls");
     $(".shot").on("click", klikPaaShot);
 
 }
 
 function klikPaaShot() {
+
     $(this).hide();
     shotsDrukket++;
     console.log("Der er blevet drukket " + shotsDrukket + " shots");
@@ -198,6 +189,7 @@ function klikPaaShot() {
 
     $(".shot").removeClass("shot_puls");
     $(".shot").off("click", klikPaaShot);
+
 
     $("#sara_sprite").addClass("sara_drink");
     $("#sara_container").on("animationend", taeller);
@@ -433,12 +425,14 @@ function martinBilledePos() {
 
 
 function fadeToBlack() {
-    console.log("fadeToBlack");
 
+    console.log("fadeToBlack");
     $("#fadetoblack").show();
+
 
     $("#martin_container").removeClass("martin_cover_move");
     $("#martin_sprite").removeClass("martin_cover");
+
 
     $("#martin_container").removeClass("martin_start_pos");
     $("#martin_sprite").removeClass("martin_pic_pos");
@@ -448,6 +442,10 @@ function fadeToBlack() {
 
     $("#sara_container").hide();
     $("#martin_container").hide();
+
+    setTimeout(dagenEfter, 2000);
+    $("#martin_container").addClass("fade_to_black_pos");
+
 
     /*
 
@@ -461,11 +459,24 @@ function fadeToBlack() {
 
     */
 
+
 }
 
 
 
 function dagenEfter() {
+    console.log("dagen efter");
+
+    $("#fadetoblack").hide();
+    $("#scene2").show();
+    $("#martin_container").show();
+
+
+    $("#martin_sprite").addClass("sidderISengen");
+    $("#iphone")[0].play();
+    $("#iphone")[0].volume = 0.1;
+    $("#iphone").on("ended", katastrofen);
+
 
     /*
 
@@ -475,11 +486,16 @@ function dagenEfter() {
 
     */
 
+
 }
 
 
 
 function katastrofen() {
+    console.log("se besked");
+    $("#martin_sprite").addClass("martin_morgen");
+    $("#martin_sprite").on("animationend", trist);
+
 
     /*
 
@@ -496,6 +512,11 @@ function katastrofen() {
 
 
 function trist() {
+    console.log("beskeder");
+    $("#martin_sprite").removeClass("martin_morgen");
+    $("#telefon_container").show();
+    $("#telefon").addClass("telefon_positivt");
+
 
     /*
 
@@ -510,6 +531,7 @@ function trist() {
 
 
     */
+
 
 
 
