@@ -363,12 +363,16 @@ function saraShirtOn() {
 	$("#sara_sprite").removeClass("sara_ligger");
 	$("#sara_sprite").addClass("sara_shirt_on");
 
-	setTimeout(fadeToBlack, 5000);
+
+	setTimeout(fadeToBlack, 3500);
+
 }
 
 
 function billedeValgt() {
+
 	idiot++;
+
 
 	console.log("billedeValgt");
 	console.log(idiot);
@@ -426,7 +430,9 @@ function martinBilledePos() {
 
 	$("#martin_sprite").addClass("martin_pic_pos");
 
-	setTimeout(fadeToBlack, 2500);
+
+	setTimeout(fadeToBlack, 2100);
+
 }
 
 
@@ -436,6 +442,7 @@ function fadeToBlack() {
 	$("#fadetoblack").show();
 	$("#tramp_musik")[0].pause();
 	$("#morgen_lyd")[0].play();
+	$("#morgen_lyd")[0].volume = 0.5;
 
 	$("#martin_container").removeClass("martin_cover_move");
 	$("#martin_sprite").removeClass("martin_cover");
