@@ -1,706 +1,706 @@
 #baggrund {
-	background-image: url(assets/fest_lokale.svg);
-	width: 100vw;
-	height: 56.25vw;
-	z-index: 1;
-	position: absolute;
+    background-image: url(assets/fest_lokale.svg);
+    width: 100vw;
+    height: 56.25vw;
+    z-index: 1;
+    position: absolute;
 }
 
 #scene2 {
-	background-image: url(assets/Martins_vaerlse.png);
-	background-size: 100%;
-	width: 100vw;
-	height: 56.25vw;
-	z-index: 100;
-	position: absolute;
+    background-image: url(assets/Martins_vaerlse.png);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    z-index: 100;
+    position: absolute;
 
 }
 
 #fadetoblack {
-	background-image: url(assets/dagen_efter.svg);
-	background-size: 100%;
-	width: 100vw;
-	height: 56.25vw;
-	z-index: 200;
-	position: absolute;
+    background-image: url(assets/dagen_efter.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    z-index: 200;
+    position: absolute;
 }
 
 #valg1 {
-	background-image: url(assets/valgknap_hjaelp_sara.svg);
-	width: 17vw;
-	height: 14vw;
+    background-image: url(assets/valgknap_hjaelp_sara.svg);
+    width: 17vw;
+    height: 14vw;
 }
 
 #valg1_container {
-	position: absolute;
-	z-index: 5;
-	top: 14vw;
-	left: 35vw;
+    position: absolute;
+    z-index: 5;
+    top: 14vw;
+    left: 35vw;
 
 }
 
 #valg2 {
-	background-image: url(assets/Kamera_valg.svg);
-	width: 16vw;
-	height: 14vw;
+    background-image: url(assets/Kamera_valg.svg);
+    width: 16vw;
+    height: 14vw;
 }
 
 #valg2_container {
-	position: absolute;
-	z-index: 5;
-	top: 14vw;
-	left: 55vw;
-	transform: scale(0.9);
+    position: absolute;
+    z-index: 5;
+    top: 14vw;
+    left: 55vw;
+    transform: scale(0.9);
 
 }
 
 #valg {
-	position: absolute;
-	background-image: url(assets/Knap_martin_valg.svg);
-	width: 15.5vw;
-	height: 10vw;
-	z-index: 5;
-	top: 5vw;
-	left: 45vw;
-	transform: scale(1.3);
+    position: absolute;
+    background-image: url(assets/Knap_martin_valg.svg);
+    width: 15.5vw;
+    height: 10vw;
+    z-index: 5;
+    top: 5vw;
+    left: 45vw;
+    transform: scale(1.3);
 
 }
 
 .knap_puls1 {
-	animation: knap_puls1_kf 1s alternate infinite;
+    animation: knap_puls1_kf 1s alternate infinite;
 }
 
 @keyframes knap_puls1_kf {
 
-	0% {
-		transform: scale(0.9)
-	}
-	50% {
-		transform: scale(1.1)
-	}
+    0% {
+        transform: scale(0.9)
+    }
+    50% {
+        transform: scale(1.1)
+    }
 }
 
 .knap_puls2 {
-	animation: knap_pul2_kf 1s alternate infinite;
+    animation: knap_pul2_kf 1s alternate infinite;
 }
 
 @keyframes knap_pul2_kf {
 
-	0% {
-		transform: scale(1.1)
-	}
-	100% {
-		transform: scale(1.3)
-	}
+    0% {
+        transform: scale(1.1)
+    }
+    100% {
+        transform: scale(1.3)
+    }
 }
 
 #bord {
-	background-image: url(assets/bord.svg);
-	width: 29vw;
-	height: 14.6vw;
-	left: 20vw;
-	top: 41vw;
-	z-index: 3;
-	position: absolute;
-	transform: scale(1.1);
+    background-image: url(assets/bord.svg);
+    width: 29vw;
+    height: 14.6vw;
+    left: 20vw;
+    top: 41vw;
+    z-index: 3;
+    position: absolute;
+    transform: scale(1.1);
 }
 
 #hoejtaler1 {
-	position: absolute;
-	z-index: 2;
-	background-image: url(assets/h%C3%B8jtaler_1.svg);
-	height: 9.5vw;
-	width: 7vw;
-	top: 26.5vw;
-	right: 15vw;
+    position: absolute;
+    z-index: 2;
+    background-image: url(assets/h%C3%B8jtaler_1.svg);
+    height: 9.5vw;
+    width: 7vw;
+    top: 26.5vw;
+    right: 15vw;
 }
 
 #hoejtaler2 {
-	position: absolute;
-	z-index: 2;
-	background-image: url(assets/h%C3%B8jtaler_2.svg);
-	height: 9.5vw;
-	width: 7vw;
-	top: 26.5vw;
-	right: 35vw;
+    position: absolute;
+    z-index: 2;
+    background-image: url(assets/h%C3%B8jtaler_2.svg);
+    height: 9.5vw;
+    width: 7vw;
+    top: 26.5vw;
+    right: 35vw;
 }
 
 #sofa {
-	position: absolute;
-	z-index: 2;
-	background-image: url(assets/sofa.svg);
-	height: 19.9vw;
-	width: 17vw;
-	top: 32vw;
-	left: 5vw;
-	transform: scale(1.4);
+    position: absolute;
+    z-index: 2;
+    background-image: url(assets/sofa.svg);
+    height: 19.9vw;
+    width: 17vw;
+    top: 32vw;
+    left: 5vw;
+    transform: scale(1.4);
 }
 
 #woofer1 {
-	position: absolute;
-	z-index: 3;
-	background-image: url(assets/h%C3%B8jtaler_tilbeh%C3%B8r.svg);
-	width: 10vw;
-	height: 10vw;
-	transform: scale(0.4);
-	top: 28vw;
-	right: 13.5vw;
+    position: absolute;
+    z-index: 3;
+    background-image: url(assets/h%C3%B8jtaler_tilbeh%C3%B8r.svg);
+    width: 10vw;
+    height: 10vw;
+    transform: scale(0.4);
+    top: 28vw;
+    right: 13.5vw;
 }
 
 #woofer2 {
-	position: absolute;
-	z-index: 3;
-	background-image: url(assets/h%C3%B8jtaler_tilbeh%C3%B8r.svg);
-	width: 10vw;
-	height: 10vw;
-	transform: scale(0.4);
-	top: 28vw;
-	right: 33.4vw;
+    position: absolute;
+    z-index: 3;
+    background-image: url(assets/h%C3%B8jtaler_tilbeh%C3%B8r.svg);
+    width: 10vw;
+    height: 10vw;
+    transform: scale(0.4);
+    top: 28vw;
+    right: 33.4vw;
 }
 
 #disco {
-	position: absolute;
-	z-index: 2;
-	background-image: url(assets/diskokugle.svg);
-	height: 19.4vw;
-	width: 14vw;
-	transform: scale(0.6);
-	left: 40vw;
-	top: -3vw;
+    position: absolute;
+    z-index: 2;
+    background-image: url(assets/diskokugle.svg);
+    height: 19.4vw;
+    width: 14vw;
+    transform: scale(0.6);
+    left: 40vw;
+    top: -3vw;
 
 
 }
 
 .techno {
-	animation: techno_kf infinite 0.3s;
+    animation: techno_kf infinite 0.3s;
 }
 
 @keyframes techno_kf {
-	0% {
-		transform: scale(0.4);
-	}
-	50% {
-		transform: scale(0.5);
-	}
+    0% {
+        transform: scale(0.4);
+    }
+    50% {
+        transform: scale(0.5);
+    }
 }
 
 .shot_puls {
-	animation-name: shot_puls_kf;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-	animation-fill-mode: both;
+    animation-name: shot_puls_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
 }
 
 @keyframes shot_puls_kf {
-	0% {
-		transform: scale(0.3);
-	}
-	50% {
-		transform: scale(0.38);
-	}
+    0% {
+        transform: scale(0.3);
+    }
+    50% {
+        transform: scale(0.38);
+    }
 }
 
 .kop1 {
 
-	position: absolute;
-	z-index: 4;
-	background-image: url(assets/krus.svg);
-	height: 10vw;
-	width: 8.5vw;
-	transform: scale(0.3);
-	top: 37.5vw;
-	left: 23vw
+    position: absolute;
+    z-index: 4;
+    background-image: url(assets/krus.svg);
+    height: 10vw;
+    width: 8.5vw;
+    transform: scale(0.3);
+    top: 37.5vw;
+    left: 23vw
 }
 
 .kop2 {
-	position: absolute;
-	z-index: 4;
-	background-image: url(assets/krus.svg);
-	height: 10vw;
-	width: 8.5vw;
-	transform: scale(0.3);
-	top: 36.5vw;
-	left: 26vw
+    position: absolute;
+    z-index: 4;
+    background-image: url(assets/krus.svg);
+    height: 10vw;
+    width: 8.5vw;
+    transform: scale(0.3);
+    top: 36.5vw;
+    left: 26vw
 }
 
 .kop3 {
-	position: absolute;
-	z-index: 4;
-	background-image: url(assets/krus.svg);
-	height: 10vw;
-	width: 8.5vw;
-	transform: scale(0.3);
-	top: 37vw;
-	left: 30vw
+    position: absolute;
+    z-index: 4;
+    background-image: url(assets/krus.svg);
+    height: 10vw;
+    width: 8.5vw;
+    transform: scale(0.3);
+    top: 37vw;
+    left: 30vw
 }
 
 .kop4 {
-	position: absolute;
-	z-index: 4;
-	background-image: url(assets/krus.svg);
-	height: 9.9vw;
-	width: 8.5vw;
-	transform: scale(0.3) rotate(90deg);
-	top: 37vw;
-	left: 36vw;
+    position: absolute;
+    z-index: 4;
+    background-image: url(assets/krus.svg);
+    height: 9.9vw;
+    width: 8.5vw;
+    transform: scale(0.3) rotate(90deg);
+    top: 37vw;
+    left: 36vw;
 }
 
 #floss_container {
-	position: absolute;
-	z-index: 20;
-	transform: scale(0.3);
-	left: 46vw;
-	top: -3vw;
+    position: absolute;
+    z-index: 20;
+    transform: scale(0.3);
+    left: 46vw;
+    top: -3vw;
 }
 
 #floss_sprite {
 
-	width: 50vw;
-	height: 66vw;
-	background-image: url(assets/floss-spritesheet.svg);
-	background-size: 1200%;
+    width: 50vw;
+    height: 66vw;
+    background-image: url(assets/floss-spritesheet.svg);
+    background-size: 1200%;
 
 }
 
 .floss_dance {
-	animation-name: floss_kf;
-	animation-duration: 2.5s;
-	animation-timing-function: steps(12);
-	animation-iteration-count: infinite;
-	animation-fill-mode: both;
+    animation-name: floss_kf;
+    animation-duration: 2.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
 }
 
 @keyframes floss_kf {
-	0% {
-		background-position: 0 0;
-	}
-	100% {
-		background-position: -1200% 0%;
-	}
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1200% 0%;
+    }
 }
 
 
 
 #beerpong_container {
-	position: absolute;
-	z-index: 4;
-	left: 82vw;
-	top: 20vw;
-	transform: scale(0.8);
+    position: absolute;
+    z-index: 4;
+    left: 82vw;
+    top: 20vw;
+    transform: scale(0.8);
 }
 
 #beerpong_sprite {
 
-	width: 20.8vw;
-	height: 30vw;
-	background-image: url(assets/beerpong_guy_spritesheet.svg);
-	background-size: 300%;
+    width: 20.1vw;
+    height: 30vw;
+    background-image: url(assets/beerpong_guy_spritesheet.svg);
+    background-size: 300%;
 }
 
 .beerpong_walkcycle {
-	animation-name: beerpong_walkcycle_kf;
-	animation-duration: 2s;
-	animation-timing-function: steps(3);
-	animation-iteration-count: infinite;
-	animation-fill-mode: both;
+    animation-name: beerpong_walkcycle_kf;
+    animation-duration: 2s;
+    animation-timing-function: steps(3);
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
 }
 
 @keyframes beerpong_walkcycle_kf {
-	0% {
-		background-position: 0 0;
-	}
-	100% {
-		background-position: -300% 0%;
-	}
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -300% 0%;
+    }
 }
 
 #sara_container {
 
-	position: absolute;
-	z-index: 2;
-	left: 22vw;
-	top: 14vw;
-	transform: scale(0.4);
+    position: absolute;
+    z-index: 2;
+    left: 22vw;
+    top: 14vw;
+    transform: scale(0.4);
 }
 
 #sara_sprite {
 
-	width: 21vw;
-	height: 30vw;
-	background-image: url(assets/sara_spritesheet-01.svg);
-	background-size: 500%;
+    width: 21vw;
+    height: 30vw;
+    background-image: url(assets/sara_spritesheet-01.svg);
+    background-size: 500%;
 }
 
 .sara_walkcycle {
 
-	animation-name: sara_walkcycle_kf;
-	animation-duration: 1s;
-	animation-timing-function: steps(4);
-	animation-iteration-count: infinite;
-	animation-fill-mode: both;
+    animation-name: sara_walkcycle_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
 
 }
 
 @keyframes sara_walkcycle_kf {
-	0% {
-		background-position: 0 -200%;
-	}
-	100% {
-		background-position: -400% -200%;
-	}
+    0% {
+        background-position: 0 -200%;
+    }
+    100% {
+        background-position: -400% -200%;
+    }
 }
 
 
 #martin_container {
-	position: absolute;
-	z-index: 1000;
+    position: absolute;
+    z-index: 1000;
 }
 
 .martin_start_pos {
-	left: 45vw;
-	top: 25vw;
+    left: 45vw;
+    top: 25vw;
 }
 
 #martin_sprite {
-	width: 21vw;
-	height: 30vw;
-	background-image: url(assets/Martin_spritesheet-01.svg);
-	background-size: 700%;
+    width: 21vw;
+    height: 30vw;
+    background-image: url(assets/Martin_spritesheet-01.svg);
+    background-size: 700%;
 
 }
 
 
 .martin_speakcycle {
-	animation-name: martin_speakcycle_kf;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-	animation-timing-function: steps(3);
+    animation-name: martin_speakcycle_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(3);
 }
 
 @keyframes martin_speakcycle_kf {
-	0% {
-		background-position: 0% -599.75%;
-	}
-	100% {
-		background-position: -300% -599.75%;
-	}
+    0% {
+        background-position: 0% -599.75%;
+    }
+    100% {
+        background-position: -300% -599.75%;
+    }
 }
 
 .martin_drinkcycle {
-	animation-name: martin_drinkcycle_kf;
-	animation-duration: 1.5s;
-	animation-timing-function: steps(5);
-	animation-iteration-count: infinite;
-	animation-fill-mode: both;
+    animation-name: martin_drinkcycle_kf;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(5);
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
 }
 
 @keyframes martin_drinkcycle_kf {
-	0% {
-		background-position: 0 0;
-	}
-	100% {
-		background-position: -500% 0;
-	}
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -500% 0;
+    }
 }
 
 .martin_reacts {
 
-	animation-name: martin_reacts_kf;
-	animation-duration: 2s;
-	animation-timing-function: steps(5);
-	animation-iteration-count: 1;
-	animation-fill-mode: both;
+    animation-name: martin_reacts_kf;
+    animation-duration: 2s;
+    animation-timing-function: steps(5);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 @keyframes martin_reacts_kf {
-	0% {
-		background-position: 0 -99.8%;
-	}
-	100% {
-		background-position: -500% -99.8%;
-	}
+    0% {
+        background-position: 0 -99.8%;
+    }
+    100% {
+        background-position: -500% -99.8%;
+    }
 
 }
 
 .martin_cover {
-	animation-name: martin_cover_kf;
-	animation-duration: 4s;
-	animation-timing-function: steps(7);
-	animation-iteration-count: 1;
-	animation-fill-mode: both;
+    animation-name: martin_cover_kf;
+    animation-duration: 4s;
+    animation-timing-function: steps(7);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 @keyframes martin_cover_kf {
-	0% {
-		background-position: 0 -399.75%;
-	}
-	100% {
-		background-position: -700% -399.75%;
-	}
+    0% {
+        background-position: 0 -399.75%;
+    }
+    100% {
+        background-position: -700% -399.75%;
+    }
 
 }
 
 .martin_cover_move {
-	animation-name: martin_cover_move_kf;
-	animation-duration: 4s;
-	animation-iteration-count: 1;
-	animation-fill-mode: both;
+    animation-name: martin_cover_move_kf;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 @keyframes martin_cover_move_kf {
-	0% {
-		left: 45vw;
-		top: 25vw;
-	}
-	100% {
-		left: 15vw;
-		top: 27vw;
-	}
+    0% {
+        left: 45vw;
+        top: 25vw;
+    }
+    100% {
+        left: 15vw;
+        top: 27vw;
+    }
 }
 
 
 .martin_morgen {
-	animation-name: martin_morgen_kf;
-	animation-duration: 3s;
-	animation-iteration-count: 1;
-	animation-timing-function: steps(3);
+    animation-name: martin_morgen_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(3);
 }
 
 @keyframes martin_morgen_kf {
 
 
-	0% {
-		background-position: 0% -299.8%
-	}
-	100% {
-		background-position: -300% -299.8%
-	}
+    0% {
+        background-position: 0% -299.75%
+    }
+    100% {
+        background-position: -300% -299.75%
+    }
 
 }
 
 .martin_love {
-	animation-name: martin_love_kf;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	animation-timing-function: steps(3);
+    animation-name: martin_love_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(3);
 }
 
 @keyframes martin_love_kf {
 
-	0% {
-		background-position: 0% -500%;
-	}
-	100% {
-		background-position: -300% -500%;
-	}
+    0% {
+        background-position: 0% -499.75%;
+    }
+    100% {
+        background-position: -300% -499.75%;
+    }
 }
 
 .martin_pic {
-	animation-name: martin_pic_kf;
-	animation-duration: 1.5s;
-	animation-iteration-count: 1;
-	animation-timing-function: steps(3);
-	animation-fill-mode: both;
+    animation-name: martin_pic_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(3);
+    animation-fill-mode: both;
 }
 
 @keyframes martin_pic_kf {
-	0% {
-		background-position: 0% -199.8%;
-	}
-	100% {
-		background-position: -300% -199.8%;
-	}
+    0% {
+        background-position: 0% -199.8%;
+    }
+    100% {
+        background-position: -300% -199.8%;
+    }
 
 }
 
 .martin_pic_pos {
 
-	background-position: -100% -199.8%;
+    background-position: -100% -199.8%;
 
 }
 
 
 .sara_move_entrance {
-	animation-name: sara_move_entrance_kf;
-	animation-duration: 3.5s;
-	animation-iteration-count: 1;
-	animation-fill-mode: both;
-	animation-timing-function: ease-in-out;
+    animation-name: sara_move_entrance_kf;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes sara_move_entrance_kf {
-	0% {
-		left: 22vw;
-		top: 14vw;
-		transform: scale(0.4);
-	}
-	100% {
-		left: 16vw;
-		top: 22vw;
-		transform: scale(1);
-	}
+    0% {
+        left: 22vw;
+        top: 14vw;
+        transform: scale(0.4);
+    }
+    100% {
+        left: 16vw;
+        top: 22vw;
+        transform: scale(1);
+    }
 }
 
 
 .sara_speakcycle {
-	animation-name: sara_speakcycle_kf;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-	animation-timing-function: steps(3);
+    animation-name: sara_speakcycle_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(3);
 }
 
 @keyframes sara_speakcycle_kf {
-	0% {
-		background-position: 0% -300%;
-	}
-	100% {
-		background-position: -300% -300%;
-	}
+    0% {
+        background-position: 0% -300%;
+    }
+    100% {
+        background-position: -300% -300%;
+    }
 }
 
 .sara_sidder {
-	background-position: 0% 0%;
+    background-position: 0% 0%;
 }
 
 
 
 .sara_drink {
-	animation-name: sara_drink_kf;
-	animation-duration: 2s;
-	animation-iteration-count: 1;
-	animation-timing-function: steps(5);
+    animation-name: sara_drink_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(5);
 }
 
 @keyframes sara_drink_kf {
-	0% {
-		background-position: 0% 0%;
-	}
-	100% {
-		background-position: -500% 0%;
-	}
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -500% 0%;
+    }
 }
 
 .sara_shirt_off {
-	animation-name: sara_shirt_off_kf;
-	animation-duration: 2s;
-	animation-iteration-count: 1;
-	animation-timing-function: steps(5);
-	animation-fill-mode: both;
+    animation-name: sara_shirt_off_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(5);
+    animation-fill-mode: both;
 }
 
 @keyframes sara_shirt_off_kf {
-	0% {
-		background-position: 0% -99.8%;
-	}
-	100% {
-		background-position: -500% -99.8%;
-	}
+    0% {
+        background-position: 0% -99.8%;
+    }
+    100% {
+        background-position: -500% -99.8%;
+    }
 
 }
 
 .sara_shirt_on {
-	animation-name: sara_shirt_on_kf;
-	animation-duration: 2s;
-	animation-iteration-count: 1;
-	animation-timing-function: steps(4);
-	animation-fill-mode: both;
+    animation-name: sara_shirt_on_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(4);
+    animation-fill-mode: both;
 }
 
 @keyframes sara_shirt_on_kf {
-	0% {
-		background-position: -400% -99.8%;
-	}
-	100% {
-		background-position: 0% -99.8%;
-	}
+    0% {
+        background-position: -400% -99.8%;
+    }
+    100% {
+        background-position: 0% -99.8%;
+    }
 
 }
 
 
 .sara_sofa_pos {
-	animation-name: sara_sofa_pos_kf;
-	animation-duration: 3s;
-	animation-iteration-count: 1;
-	animation-fill-mode: both;
+    animation-name: sara_sofa_pos_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 @keyframes sara_sofa_pos_kf {
-	0% {
-		left: 16vw;
-		top: 22vw;
-		transform: scale(1);
-	}
-	100% {
-		left: 5vw;
-		top: 25vw;
-		transform: scale(1);
-	}
+    0% {
+        left: 16vw;
+        top: 22vw;
+        transform: scale(1);
+    }
+    100% {
+        left: 5vw;
+        top: 25vw;
+        transform: scale(1);
+    }
 }
 
 .sara_ligger {
 
 
-	background-position: -400% -99.8%;
+    background-position: -400% -99.8%;
 
 }
 
 .fade_to_black_pos {
-	left: 26vw;
-	top: 10vw;
+    left: 26vw;
+    top: 10vw;
 }
 
 #telefon_container {
-	position: absolute;
-	z-index: 100;
-	left: 60vw;
-	top: 15vw;
-	transform: scale(3);
+    position: absolute;
+    z-index: 100;
+    left: 60vw;
+    top: 15vw;
+    transform: scale(3);
 
 
 
 }
 
 #telefon {
-	background-image: url(assets/telefon_spritesheet.svg);
-	width: 10vw;
-	height: 14.4vw;
-	background-size: 600%;
+    background-image: url(assets/telefon_spritesheet.svg);
+    width: 10vw;
+    height: 14.4vw;
+    background-size: 600%;
 }
 
 .telefon_positivt {
-	animation-name: telefon_positivt_kf;
-	animation-iteration-count: 1;
-	animation-timing-function: steps(5);
-	animation-fill-mode: both;
-	animation-duration: 20s;
+    animation-name: telefon_positivt_kf;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(5);
+    animation-fill-mode: both;
+    animation-duration: 20s;
 }
 
 .sidderISengen {
-	background-position: 0% -300%
+    background-position: 0% -299.75%
 }
 
 @keyframes telefon_positivt_kf {
-	0% {
-		background-position: 0% 0%;
-	}
-	100% {
-		background-position: -500% 0%
-	}
+    0% {
+        background-position: 0% -0.224%;
+    }
+    100% {
+        background-position: -400% -0.224%;
+    }
 }
 
 .telefon_negativt {
-	animation-name: telefon_negativt_kf;
-	animation-iteration-count: 1;
-	animation-timing-function: steps(3);
-	animation-fill-mode: both;
-	animation-duration: 15s;
+    animation-name: telefon_negativt_kf;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(3);
+    animation-fill-mode: both;
+    animation-duration: 15s;
 }
 
 @keyframes telefon_negativt_kf {
-	0% {
-		background-position: 0% -100%;
-	}
-	100% {
-		background-position: -300% -100%
-	}
+    0% {
+        background-position: 0% -100.6%;
+    }
+    100% {
+        background-position: -300% -100.6%;
+    }
 }

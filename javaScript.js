@@ -126,7 +126,7 @@ function startHistorie() {
 
 function ankommet() {
 
-	console.log("ankommet + snak");
+	console.log("ankommet + speakcycles");
 	$("#sarafest")[0].play();
 	$("#sara_container").off("animationend", ankommet);
 	$("#sara_sprite").removeClass("sara_walkcycle");
@@ -198,7 +198,7 @@ function klikPaaShot() {
 function taeller() {
 	console.log("taeller, der er blevet drukket et shot");
 
-	if (shotsDrukket == 1) {
+	if (shotsDrukket == 3) {
 		console.log("Der er blevet drukket 3 shots! if statement opfyldt");
 		$("#sara_sprite").removeClass("sara_drink");
 		$("#sara_container").off("animationend", taeller);
@@ -506,11 +506,13 @@ function dagenEfter() {
 
 
 function katastrofen() {
+
 	console.log("se besked");
 	console.log(idiot);
 	$("#martin_sprite").removeClass("sidderISengen");
 	$("#martin_sprite").addClass("martin_morgen");
 	$("#martin_sprite").on("animationend", flagDecider);
+
 }
 
 function flagDecider() {
@@ -526,26 +528,33 @@ function flagDecider() {
 }
 
 function negativt() {
+
 	console.log("negativt");
+	$("#martin_sprite").addClass("sidderISengen");
 	$("#telefon").addClass("telefon_negativt");
 	$("#telefon_container").show();
 	$("#skyldfoelse")[0].play();
 	$("#skyldfoelse")[0].volume = 0.8;
-	$("#telefon_sprite").on("click", window.open("http://privatsnak.dk/13-15/"))
+	link1();
+
 }
 
-
-
-
-
-
+function link1() {
+	window.open("http://privatsnak.dk/13-15/");
+}
 
 function positivt() {
+
 	console.log("positive beskeder");
 	$("#martin_sprite").removeClass("martin_morgen");
 	$("#hjerte_slaa")[0].play();
 	$("#martin_sprite").addClass("martin_love");
 	$("#telefon_container").show();
 	$("#telefon").addClass("telefon_positivt");
-	$("#telefon_sprite").on("click", window.open("http://privatsnak.dk/13-15/hvad-spoerger-andre-om/hvordan-flirter-man-med-%C3%A9n-man-godt-kan-lide/"))
+	link2();
+
+}
+
+function link2() {
+	window.open("http://privatsnak.dk/13-15/hvad-spoerger-andre-om/hvordan-flirter-man-med-%C3%A9n-man-godt-kan-lide/");
 }
